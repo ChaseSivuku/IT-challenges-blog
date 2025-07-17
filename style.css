@@ -1,0 +1,144 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  background: #f4f6f8;
+  color: #333;
+}
+
+header {
+  background-color: #023e3e;
+  color: white;
+  padding: 2rem;
+  text-align: center;
+}
+
+main {
+  padding: 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.section {
+  display: flex;
+  background: white;
+  margin-bottom: 30px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.section img {
+  width: 250px;
+  height: auto;
+  object-fit: cover;
+}
+
+.text {
+  padding: 20px;
+}
+
+h2 {
+  color: #00695c;
+}
+
+button {
+  background-color: #00796b;
+  color: white;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #004d40;
+}
+
+#tech-tip {
+  margin-top: 15px;
+  font-weight: bold;
+  color: #00796b;
+}
+
+.hidden {
+  display: none;
+}
+
+.center {
+  text-align: center;
+  padding: 20px;
+}
+
+footer {
+  background-color: #eee;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 50px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #004d40;
+  color: white;
+  padding: 10px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.logo {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.hamburger {
+  font-size: 1.8rem;
+  cursor: pointer;
+  display: none;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.nav-links li a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background-color: #004d40;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    padding: 15px 0;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .nav-links li {
+    text-align: center;
+    margin: 10px 0;
+  }
+}
